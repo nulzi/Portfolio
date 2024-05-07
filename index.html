@@ -2,48 +2,69 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Main</title>
+    <title>Nulzi's Portfolio</title>
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>Tennis market</h1>
-    <div id="greeting">
-      Welcome to Tennis market! <br />
-      Enjoy your shopping.
+    <header>
+      <h1>Nulzi's Portfolio</h1>
+    </header>
+    <div class="greeting">
+      Nulzi의 포트폴리오 페이지에 오신 것을 환영합니다<br />
+      지금은 단순하게 블로그, 깃허브 페이지가 연동되어 있지만 앞으로 더 화려하게
+      꾸며보고 기능도 추가하겠습니다.
       <br />
-      <br />
-      <a href="/orderlist">order list</a>
     </div>
     <div class="grid">
-      <div class="card">
-        <img class="card_img" src="./img/racket1.png" alt="racket1" />
-        <p class="card_title">colorful racket</p>
-        <input
-          class="card_button"
-          type="button"
-          value="order"
-          onclick="location.href = '/order?productId=1';"
-        />
+      <div class="grid_row1">
+        <div class="profile">
+          <img
+            class="profile_img"
+            src="./src/img/nulzi.jpg"
+            alt="profile image"
+          />
+        </div>
+        <div class="info">
+          <p>이름: nulzi</p>
+          <p>관심 분야: 웹 프론트엔드</p>
+          <p>
+            개인 연락:<br />
+            kimty131@naver.com <br />
+            kimty131@gmail.com
+          </p>
+        </div>
       </div>
-      <div class="card">
-        <img class="card_img" src="./img/racket2.png" alt="racket2" />
-        <p class="card_title">red racket</p>
-        <input
-          class="card_button"
-          type="button"
-          value="order"
-          onclick="location.href = '/order?productId=2';"
-        />
-      </div>
-      <div class="card">
-        <img class="card_img" src="./img/racket3.png" alt="racket3" />
-        <p class="card_title">blue racket</p>
-        <input
-          class="card_button"
-          type="button"
-          value="order"
-          onclick="location.href = '/order?productId=3';"
-        />
+      <div class="grid_row2">
+        <div class="card">
+          <a href="https://github.com/nulzi" target="_blank">
+            <img
+              class="card_img"
+              src="./src/img/moon.png"
+              alt="추후 추가 예정"
+            />
+            <h3 class="card_title">Github</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://nulzi-dev.tistory.com/" target="_blank">
+            <img
+              class="card_img"
+              src="./src/img/moon.png"
+              alt="추후 추가 예정"
+            />
+            <h3 class="card_title">Blog</h3>
+          </a>
+        </div>
+        <div class="card_wait">
+          <a>
+            <img
+              class="card_img"
+              src="./src/img/moon.png"
+              alt="추후 추가 예정"
+            />
+            <h3 class="card_title">프로젝트 추가 예정</h3>
+          </a>
+        </div>
       </div>
     </div>
   </body>

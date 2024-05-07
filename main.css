@@ -1,28 +1,78 @@
+body {
+  color: white;
+  position: relative;
+  background-color: black;
+  background-image: url("./src/img/joshua-woroniecki-3mXIZP6_6zY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
 h1 {
   text-align: center;
+  margin-top: 0;
+  padding-top: 20px;
 }
-#greeting {
+.greeting {
   text-align: center;
   margin-bottom: 50px;
+}
+.profile {
+  justify-self: center;
+  margin: 15px 10px;
+}
+.profile_img {
+  width: 200px;
+  height: 250px;
+}
+.info {
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .card_img {
   width: 150px;
   height: 150px;
 }
-.card {
+.card,
+.card_wait {
   text-align: center;
   display: inline-block;
+  padding: 20px 0;
+}
+.card a,
+.card_wait a {
+  text-decoration: none;
+  color: white;
+  position: relative;
 }
 .card_title {
-  font-weight: 700;
-}
-.card_button {
   width: 100px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: -110px;
+  left: 25px;
+  color: rgb(235, 235, 67);
+}
+.card_wait .card_title {
+  width: auto;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(235, 235, 67);
+  position: unset;
 }
 .grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 0 20px;
+}
+.grid_row1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 50px;
+}
+.grid_row2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
